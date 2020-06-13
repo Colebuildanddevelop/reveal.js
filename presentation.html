@@ -49,24 +49,17 @@
 					</p>
 				</section>
 				<section>
-					<h2>Fragment Styles</h2>
-					<p>There's different types of fragments, like:</p>
-					<p class="fragment grow">Install Node.js (10.0.0 or later)</p>
-					<p class="fragment shrink">Clone the reveal.js repository
-						$ git clone https://github.com/hakimel/reveal.js.git</p>
-					<p class="fragment fade-out">Move to the reveal.js folder and install dependencies
-						$ cd reveal.js && npm install</p>
-						<p class = "fragment grow"></p>Serve the presentation and monitor source files for changes
-						$ npm start</p>
-					<p>
-						<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
-						<span style="display: inline-block;" class="fragment fade-up">up, </span>
-						<span style="display: inline-block;" class="fragment fade-down">down, </span>
-						<span style="display: inline-block;" class="fragment fade-left">left</span>
-					</p>
-					<p class="fragment fade-in-then-out">fade-in-then-out</p>
-					<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
-					<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
+					<h2>Installation Process</h2>
+					<p class="fragment fade-in-then-semi-out"><span class="fragment highlight-red">Install</span> Node.js (10.0.0 or later)</p>
+					<p class="fragment fade-in-then-semi-out">Clone the reveal.js repository<br>
+						<span class="fragment highlight-red">$ git clone</span> https://github.com/hakimel/reveal.js.git</p>
+					<p class="fragment fade-in-then-semi-out">Move to the reveal.js folder and install dependencies
+						<br><span class="fragment highlight-red">$ cd reveal.js && npm install</span></p>
+						<p class="fragment fade-in-then-semi-out">Serve the presentation and monitor source files for changes<br>
+						<span class="fragment highlight-red">$ npm start</span></p>
+					
+					<!-- <p class="fragment fade-in-then-out">fade-in-then-out</p>
+					<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p> -->
 				</section>
 				<!-- <section data-auto-animate>
 					<h2 data-id="code-title">Installation</h2>
@@ -85,8 +78,8 @@
 				</section> -->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
+						<h2>Reveal.js Features</h2>
+						<p>Checkout some examples of what you can do with Reveal.js!</p>
 						<p>Use the <em>Space</em> key to navigate through all slides.</p>
 						<br>
 						<a href="#" class="navigate-down">
@@ -94,57 +87,328 @@
 						</a>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+						<h2>Point of View</h2>
+						<p>
+							Press <strong>ESC</strong> to enter the slide overview.
+						</p>
+						<p>
+							Hold down the <strong>alt</strong> key (<strong>ctrl</strong> in Linux) and click on any element to zoom towards it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Click again to zoom back out.
+						</p>
+						<p>
+							(NOTE: Use ctrl + click in Linux.)
+						</p>
 					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
+					<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+						<h2>Auto-Animate</h2>
+						<p>Automatically animate matching elements across slides with <a href="https://revealjs.com/auto-animate/">Auto-Animate</a>.</p>
+						<div class="r-hstack justify-center">
+							<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+							<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+							<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+						</div>
+					</section>
+					<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+						<div class="r-hstack justify-center">
+							<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
+							<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
+							<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
+						</div>
+						<h2 style="margin-top: 20px;">Auto-Animate</h2>
+					</section>
+					<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+						<div class="r-stack">
+							<div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
+							<div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
+							<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
+						</div>
+						<h2 style="margin-top: 20px;">Auto-Animate</h2>
+					</section>
+	
+	
+			
+					<section data-auto-animate>
+						<h2 data-id="code-title">Highlight important lines of code!</h2>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers="1-6|8-12|41-50|118-134|136-137">
+							// DISPLAY FETCHED DATA ON SINGLE DANCER
+							const showDancerImage = url => {
+							  const dancerImg = document.querySelector('#dancer-img');
+							
+							  dancerImg.src = url;
+							};
+							
+							const showDancerName = name => {
+							  const dancerName = document.querySelector('#dancer-name');
+							
+							  dancerName.textContent = name;
+							};
+							
+							const showDancerLikes = likes => {
+							  const dancerLikes = document.querySelector('#like-count');
+							
+							  dancerLikes.textContent = likes;
+							};
+							
+							const showDancerDescription = description => {
+							  const dancerDescription = document.querySelector('#dancer-description');
+							
+							  dancerDescription.textContent = description;
+							};
+							
+							const makeSingleFeedback = feedback => {
+							  const feedbackUL = document.querySelector('.feedback ul');
+							  const li = document.createElement('li');
+							
+							  li.textContent = feedback;
+							  feedbackUL.appendChild(li);
+							};
+							
+							const showDancerFeedback = feedback => {
+							  const feedbackUL = document.querySelector('.feedback ul');
+							
+							  feedbackUL.textContent = '';
+							  feedback.forEach(makeSingleFeedback);
+							};
+							
+							const updateDancerDetails = id => {
+							  getSingleDancer(id)
+							  .then(json => {
+								showDancerImage(json.image);
+								showDancerName(json.name);
+								showDancerLikes(json.likes);
+								showDancerDescription(json.description);
+								showDancerFeedback(json.feedback);
+							  });
+							};
+							
+							updateDancerDetails(1);
+							  
+							// LIKE DANCER
+							const likeButton = document.querySelector('#like');
+							
+							// HELPER METHOD FOR UPDATING LIKES
+							const updateLikes = likes => {
+							  patchDancer(1, { likes });
+							  showDancerLikes(likes);
+							};
+							
+							likeButton.addEventListener('click', () => {
+							  let likes = null;
+							
+							  getSingleDancer(1)
+								.then(json => {
+								  likes = ++json.likes;
+								  updateLikes(likes);
+								});
+							});
+							
+							// ADD NON-PERSISTENT FEEDBACK
+							const feedbackForm = document.querySelector('.feedback form');
+							
+							feedbackForm.addEventListener('submit', e => {
+							  e.preventDefault();
+							
+							  const input = document.querySelector('input[type="text"]');
+							  const feedback = input.value;
+							
+							  input.value = '';
+							  makeSingleFeedback(feedback);
+							
+							  // ADVANCED: PERSIST FEEDBACK (this is the easiest but not safest way to do it)
+							  patchFeedback();
+							});
+							
+							// ADVANCED: HELPER METHOD FOR UPDATING FEEDBACK
+							const patchFeedback = () => {
+							  const feedbackLIs = document.querySelectorAll('.feedback ul li');
+							  const feedbackArray = Array.from(feedbackLIs).map(el => el.textContent);
+							
+							  patchDancer(1, { feedback: feedbackArray });
+							};
+							
+							// ADVANCED: DELETE FEEDBACK (the ugly and lazy way)
+							const feedbackUL = document.querySelector('.feedback ul');
+							
+							feedbackUL.addEventListener('click', e => {
+							  e.target.remove();
+							  patchFeedback();
+							});
+							
+							// ADVANCED: UNLIKE DANCER
+							const unlikeButton = document.querySelector('#unlike');
+							
+							unlikeButton.addEventListener('click', () => {
+							  let likes = null;
+							
+							  getSingleDancer(1)
+								.then(json => {
+								  likes = --json.likes;
+								  if (likes >= 0) updateLikes(likes);
+								});
+							});
+							
+							// ADVANCED: SHOW MENU OF DANCERS
+							const createMenu = array => {
+							  const menu = document.querySelector('nav ul');
+							  
+							  menu.textContent = '';
+							  array.forEach(dancer => {
+								const li = document.createElement('li');
+								const btn = document.createElement('button');
+							
+								btn.textContent = dancer.name;
+								btn.addEventListener('click', () => {
+								  updateDancerDetails(dancer.id);
+								});
+								li.appendChild(btn);
+								menu.appendChild(li);
+							  });
+							};
+							
+							getAllDancers()
+							  .then(createMenu);
+						</code></pre>
+					</section>
+					<section>How It's Possible
+						<h3>Add this class to your code tag</h3>
+							<p>class="hljs" data-trim data-line-numbers="1-6|8-12|41-50|118-134"</p><br>
+						<p>The pipes within data-line-numbers separate the range of code lines that you want to highlight.</p>
+					</section>
+
+	
+
+
+					<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
+						<h2>Background Transitions</h2>
+						<p>
+							Different background transitions are available via the backgroundTransition option. This one's called "zoom".
+						</p>
+						<pre><code class="hljs javascript">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
+					</section>
+	
+					<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
+						<h2>Background Transitions</h2>
+						<p>
+							You can override background transitions per-slide.
+						</p>
+						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
+					</section>
+	
+					<section data-background-iframe="https://hakim.se" data-background-interactive>
+						<div style="position: absolute; width: 40%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+							<h2>Iframe Backgrounds</h2>
+							<p>Since reveal.js runs on the web, you can easily embed other web content. Try interacting with the page in the background.</p>
+						</div>
+					</section>
+					<section data-background="#dddddd">
+						<h2>Slide Backgrounds</h2>
+						<p>
+							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
+						</p>
+						<a href="#" class="navigate-down">
+							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
 						</a>
+					</section>
+					<section data-background="https://mymodernmet.com/wp/wp-content/uploads/2020/03/disapproving-corgis-9.jpg">
+						<h2>Image Backgrounds</h2>
+						<pre><code class="hljs html">&lt;section data-background="image.png"&gt;</code></pre>
+					</section>
+					<section data-background="https://i.imgflip.com/30aimf.png" data-background-repeat="repeat" data-background-size="100px">
+						<h2>Tiled Backgrounds</h2>
+						<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
+					</section>
+					<section data-background-video="./Beyonce.mp4" data-background-color="#000000">
+						<div class="fragment fade-out" style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							
+							<h2>You Can Add Video Backgrounds</h2>
+							<pre><code class="hljs html" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+							 
+						</div>
+						<div class="fragment fade-in-then-out" style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
+							
+							<h2>Can you guess the Song and Artist? ;D</h2>
+							 
+						</div>
+					</section>
+					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
+						<h2>Add GIFs as backgrounds!</h2>
 					</section>
 				</section>
 				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down the <strong>alt</strong> key (<strong>ctrl</strong> in Linux) and click on any element to zoom towards it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Click again to zoom back out.
-					</p>
-					<p>
-						(NOTE: Use ctrl + click in Linux.)
-					</p>
+					<section data-auto-animate>
+						<h3>Swapping list items</h3>
+						<ul>
+							<li>One</li>
+							<li>Two</li>
+							<li>Three</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h3>Swapping list items</h3>
+						<ul>
+							<li>Two</li>
+							<li>One</li>
+							<li>Three</li>
+						</ul>
+					</section>
+					<section data-auto-animate>
+						<h3>Swapping list items</h3>
+						<ul>
+							<li>Two</li>
+							<li>Three</li>
+							<li>One</li>
+						</ul>
+					</section>
 				</section>
 
-				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-					<h2>Auto-Animate</h2>
-					<p>Automatically animate matching elements across slides with <a href="https://revealjs.com/auto-animate/">Auto-Animate</a>.</p>
-					<div class="r-hstack justify-center">
-						<div data-id="box1" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-						<div data-id="box2" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-						<div data-id="box3" style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-					</div>
+				<section>
+					<h2>Pros</h2>
+					<p class="fragment fade-in-then-semi-out">
+						Brings HTML to life
+					</p>
+					<p class="fragment fade-in-then-semi-out">
+						A great tool to create interactive Portfolios
+					</p>
+					<p class="fragment fade-in-then-semi-out">
+						Many classes available to add features
+					</p>
+					<p class="fragment fade-in-then-semi-out">
+						Many unique features that will make your presentation stand out such as pausing, or eye catching animations
+					</p>
+					<p class="fragment fade-in-then-semi-out">
+					   Does a good job of highlighting key elements in presentation
+					</p>	
 				</section>
-				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-					<div class="r-hstack justify-center">
-						<div data-id="box1" data-auto-animate-delay="0" style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
-						<div data-id="box2" data-auto-animate-delay="0.1" style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
-						<div data-id="box3" data-auto-animate-delay="0.2" style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
-					</div>
-					<h2 style="margin-top: 20px;">Auto-Animate</h2>
+				<section>
+					<h2>Cons</h2>
+					<p class="fragment fade-in-then-semi-out">
+						No free GUI availible so must have coding knowledge to create presentations
+					</p>
+					<p class="fragment fade-in-then-semi-out">
+						Can be hard to collaborate with others
+					</p>
+					<p class="fragment fade-in-then-semi-out">
+						Time Consuming 
+					</p>
 				</section>
-				<section data-auto-animate data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-					<div class="r-stack">
-						<div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
-						<div data-id="box2" style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
-						<div data-id="box3" style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
-					</div>
-					<h2 style="margin-top: 20px;">Auto-Animate</h2>
+				<section>
+					<h2>Much more</h2>
+					<ul>
+						<li>Right-to-left support</li>
+						<li><a href="https://revealjs.com/api/">Extensive JavaScript API</a></li>
+						<li><a href="https://revealjs.com/auto-slide/">Auto-progression</a></li>
+						<li><a href="https://revealjs.com/backgrounds/#parallax-background">Parallax backgrounds</a></li>
+						<li><a href="https://revealjs.com/keyboard/">Custom keyboard bindings</a></li>
+					</ul>
 				</section>
 
+				<section data-background="https://media.giphy.com/media/3o7qDSOvfaCO9b3MlO/giphy.gif">
+					<h1>THE END</h1>
+					<p>
+						- <a href="https://slides.com">Try the online editor</a> <br>
+						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
+					</p>
+				</section>
+				
 			</div>
 
 		</div>
